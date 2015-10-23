@@ -90,11 +90,11 @@ footer { background-color: #1E1E1E; width:100%; display:block; color:#f7f7f7; }
 .color-elements{color:#A7CCE8;}
 .custom-menu li{font-size: 12px;padding:0px 0px;}
 .btn-custom, .btn-custom:active,.btn-custom:focus, .btn-custom:hover{background-color:#A7CCE8;border-color:#A7CCE8}
-#about {padding: 80px 0px 40px 0px;/*background-image:url("../images/background.jpg");background-repeat:repeat;*/}
-#products {padding-top:80px;}
-#training {padding: 80px 0px 40px 0px;}
-#staffing {padding: 80px 0px 40px 0px;}
-#solutions {padding: 80px 0px 40px 0px;}
+#about {padding: 80px 0px 40px 0px;background-color: #e6e6e6;}
+#products {padding-top:80px;background-color: #A7CCE8;}
+#training {padding: 80px 0px 40px 0px;background-color: #A7CCE8;}
+#staffing {padding: 80px 0px 40px 0px;background-color: #e6e6e6;}
+#solutions {padding: 80px 0px 40px 0px;background-color: #e6e6e6;}
 
 #contact {padding-top:80px;}
 #location {padding-top:50px;}
@@ -118,7 +118,6 @@ footer { background-color: #1E1E1E; width:100%; display:block; color:#f7f7f7; }
 .social-icons{color:#313131;font-size:24px;}
 .list-social-icons {display: inline-block; vertical-align: middle;}
 .list-social-icons li {margin: 0px 15px;width: 40px;height: 40px;text-align: center;line-height: 40px;border-radius: 50%;-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-o-transition: all 0.4s ease;transition: all 0.4s ease;}
-.list-social-icons li:hover {background:#A7CCE8;}
 .list-social-icons li:hover .social-icons {color:#f7f7f7;}
 .list-social-icons li:active .social-icons {background:#A7CCE8;}
 .blog{padding-top:70px;}
@@ -165,7 +164,7 @@ img.displayed{display: block;margin-left: auto;margin-right: auto;background-col
 .navbar-inverse .navbar-nav li { margin-left:15px; text-transform: uppercase; }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover
 { color: #000; background-color: transparent; border-bottom: 3px solid #000;  margin-bottom: 0px;-webkit-transition:0.5s; transition: 0.5s; transition-timing-function: ease; }
-.navbar-inverse .navbar-nav>li>a:hover { color:#FFF; border-bottom: 3px solid #FFF;-webkit-transition:0.5s; transition: 0.5s; transition-timing-function: ease; }
+.navbar-inverse .navbar-nav>li>a:hover { color:blue; border-bottom: 3px solid #FFF;-webkit-transition:0.5s; transition: 0.5s; transition-timing-function: ease; }
 .navbar-inverse .navbar-nav>li>a:active { border-bottom: 3px solid #000;-webkit-transition:0.5s; transition: 0.5s; transition-timing-function: ease; }
 .navbar-inverse { border:none; }
 .navbar-brand img{ margin-top:-5px; }
@@ -216,7 +215,7 @@ img.displayed{display: block;margin-left: auto;margin-right: auto;background-col
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {	background-color:#A7CCE8; border-color: #ddd; }
  .page-header { font-size: 25px; padding-bottom:18px; text-transform: uppercase; }
 .myfooter { color: #9d9d9d;	padding:10px 0px;}
-.myfooter a { color: #162139; padding:10px 0px; -webkit-transition:0.5s; transition: 0.5s;  }
+.myfooter a {  padding:10px 0px; -webkit-transition:0.5s; transition: 0.5s;  }
 .myfooter a:hover {	color: #A7CCE8; padding:12px 0px; text-decoration: none; -webkit-transition-timing-function: linear; transition-timing-function: linear;}
 .singlepost { margin-bottom:60px; }
 .singlepost a{ color:#A7CCE8;}
@@ -250,7 +249,7 @@ img.displayed{display: block;margin-left: auto;margin-right: auto;background-col
 .comments1 { margin-top:60px; }
 .comments1 .media-heading  { color:#313131; font-size:16px; }
 .comments1 .media-object { max-width: 60px; }
-.btn-primary { background-color: #A7CCE8;  border:none; }
+.btn-primary {   border:none; }
 .btn-primary:hover { background-color: #2D2D2D;-webkit-transition:0.5s; transition: 0.5s; transition-timing-function: ease; }
 @media only screen and (min-width:768px) and (max-width: 980px) { 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
