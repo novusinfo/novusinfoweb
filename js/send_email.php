@@ -1,7 +1,7 @@
 <?php
 if (isset($_REQUEST['email']))  {
     //Email information
-    $admin_email = "training@novusinfo.com";
+    $admin_email = "info@novusinfo.com";
     $name = $_REQUEST['first_name'];
     $email = $_REQUEST['email'];
     $message = $_REQUEST['message'];
