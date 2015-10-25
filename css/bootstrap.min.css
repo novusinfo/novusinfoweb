@@ -871,7 +871,7 @@ hr {
     font-size: 12px;
 }
 p {
-    color: #9d9d9d;
+    color:black;  /* ksh #9d9d9d;*/
 }
 .lead {
     margin-bottom: 20px;
@@ -2188,7 +2188,7 @@ select[multiple].form-group-lg .form-control, textarea.form-group-lg .form-contr
 }
 .btn-primary {
     color: #fff;
-    background-color: #337ab7;
+    background-color: #E96840;
     border-color: #2e6da4;
 }
 .btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
