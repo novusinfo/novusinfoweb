@@ -15,51 +15,54 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/novus.css" />
     <link rel="icon"  type="image/png"  href="images/logo.ico" />
-    <script language="javascript" type="text/javascript">
-    function SendEmail()
-   {
-  
    
-     if(fnTrim(document.getElementById('name').value)=='')
-    {
-      alert('Please write your name');
-     return false;
-   }
-   if(checkEmail(fnTrim(document.getElementById('email').value))==false)
-   {
-    alert('Please provide a valid email address');
-     return false;
-   }
-   if(fnTrim(document.getElementById('message').value)=='')
-   {
-     alert('Please write a message');
-     return false;
-   }
-  alert("Thank you for contacting us. We will get in touch with you soon.");
- document.getElementById('contactForm').method="post";
- document.getElementById('contactForm').action="http://jenkins.novusinfo.com/send_email.php";
- document.getElementById('contactForm').submit();
-   
-   return false;
-   }
-
- function checkEmail(email) {
-    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-
-    if (!filter.test(email)) {
-    return false;
-   }
-}
-
-function fnTrim(value)
-{
-
- value=value.replace(/^\s+ \s+$/g, "");
- return value;
-}
-    </script>
   </head>
   <body data-spy="scroll">
+    <script language="javascript" type="text/javascript">
+      function SendEmail()
+      {
+        
+        
+        if(fnTrim(document.getElementById('name').value)=='')
+        {
+          alert('Please write your name');
+          return false;
+        }
+        if(checkEmail(fnTrim(document.getElementById('email').value))==false)
+        {
+          alert('Please provide a valid email address');
+          return false;
+        }
+        if(fnTrim(document.getElementById('message').value)=='')
+        {
+          alert('Please write a message');
+          return false;
+        }
+        alert("Thank you for contacting us. We will get in touch with you soon.");
+        document.getElementById('contactForm').method="post";
+        document.getElementById('contactForm').action="http://jenkins.novusinfo.com/send_email.php";
+        document.getElementById('contactForm').submit();
+        
+        return false;
+      }
+      
+      function checkEmail(email) {
+        var filter = "/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;";
+        
+        //if (!filter.test(email)) {
+          
+          //return false;
+        //}
+        return true;
+      }
+        
+        function fnTrim(value)
+      {
+        
+        value=value.replace(/^\s+ \s+$/g, "");
+        return value;
+      }
+    </script>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
