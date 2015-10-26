@@ -19,13 +19,44 @@
    function SendEmail()
    {
   
-   alert("Thank you for contacting us. We will get in touch with you soon.");
-   document.getElementById('contactForm').method="post";
-   document.getElementById('contactForm').action="http://jenkins.novusinfo.com/send_email.php";
-   document.getElementById('contactForm').submit();
+   
+     if(fnTrim(document.getElementById('name').value)=='')
+    {
+      alert('Please write your name');
+     return false;
+   }
+   if(checkEmail(fnTrim(document.getElementById('email').value))==false)
+   {
+    alert('Please provide a valid email address');
+     return false;
+   }
+   if(fnTrim(document.getElementById('message').value)=='')
+   {
+     alert('Please write a message');
+     return false;
+   }
+  alert("Thank you for contacting us. We will get in touch with you soon.");
+ document.getElementById('contactForm').method="post";
+ document.getElementById('contactForm').action="http://jenkins.novusinfo.com/send_email.php";
+ document.getElementById('contactForm').submit();
    
    return false;
    }
+
+ function checkEmail(email) {
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email)) {
+    return false;
+   }
+}
+
+function fnTrim(value)
+{
+
+ value=value.replace(/^\s+ \s+$/g, "");
+ return value;
+}
     </script>
   </head>
   <body data-spy="scroll">
@@ -599,6 +630,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-8">
+          
              <form id="contactForm" action="http://jenkins.novusinfo.com/send_email.php" target="my-iframe" method="post">
           
               <div class="row">
@@ -623,7 +655,7 @@
                 </div>
                 <div class="col-sm-3 col-xs-6 height-contact-element">
                   <div class="form-group">
-                       <input type="submit" class="btn btn-md btn-custom btn-noborder-radius" onclick="javascript:return SendEmail();" value="Send Email"/>
+                       <input type="submit" class="btn btn-md btn-custom btn-noborder-radius" onclick="javascript:SendEmail();" value="Send Email"/>
                 
                   </div>
                 </div>
