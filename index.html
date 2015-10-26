@@ -15,6 +15,18 @@
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/novus.css" />
   <link rel="icon"  type="image/png"  href="images/logo.ico" />
+  <script language="javascript" type="text/javascript">
+   function SendEmail()
+   {
+  
+   alert("Thank you for contacting us. We will get in touch with you soon.");
+   document.getElementById('contactForm').method="post";
+   document.getElementById('contactForm').action="http://jenkins.novusinfo.com/send_email.php";
+   document.getElementById('contactForm').submit();
+   
+   return false;
+   }
+    </script>
   </head>
   <body data-spy="scroll">
     <!-- Navigation -->
@@ -587,7 +599,8 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-8">
-            <form class="inline" id="contactForm" method="post" action="http://jenkins.novusinfo.com/send_email.php" >
+             <form id="contactForm" action="http://jenkins.novusinfo.com/send_email.php" target="my-iframe" method="post">
+          
               <div class="row">
                 <div class="col-sm-6 height-contact-element">
                   <div class="form-group">
@@ -610,7 +623,8 @@
                 </div>
                 <div class="col-sm-3 col-xs-6 height-contact-element">
                   <div class="form-group">
-                    <input type="submit" class="btn btn-md btn-custom btn-noborder-radius" value="Send Email"/>
+                       <input type="submit" class="btn btn-md btn-custom btn-noborder-radius" onclick="javascript:return SendEmail();" value="Send Email"/>
+                
                   </div>
                 </div>
                 
@@ -823,6 +837,6 @@
     $(document).ready(gallery);
   </script>
   
-  
+  <iframe width="0" height="0" name="my-iframe" src="http://jenkins.novusinfo.com/send_email.php"></iframe>
   </body>
 </html>
