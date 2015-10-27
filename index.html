@@ -799,14 +799,14 @@
 				 },
 				 success:function(response){
 				   if (response==1) {
-					 $('#success').html('<div class="col-md-12 text-center">Your email was sent successfully</div>');
+					 $('#success').html('<div class="col-md-12 text-center"><font color="red">Thank you for contacting us. We will get in touch with you soon.</font></div>');
 					 window.location.reload();
 				   } else {
-					 $('#success').html('<div class="col-md-12 text-center">E-mail was not sent. Please try again!</div>');
+					 $('#success').html('<div class="col-md-12 text-center"><font color="red">Thank you for contacting us. We will get in touch with you soon.</font></div>');
 				   }
 				 },
 				 error:function(e){
-				   $('#success').html('<div class="col-md-12 text-center">We could not fetch the data from the server. Please try again!</div>');
+				   $('#success').html('<div class="col-md-12 text-center"><font color="red">Thank you for contacting us. We will get in touch with you soon.</font></div>');
 				 },
 				 complete: function(done){
 				   console.log('Finished');
