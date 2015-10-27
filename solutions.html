@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>
+      Novus InfoSolutions
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/novus.css" />
+    <link rel="icon"  type="image/png"  href="images/logo.ico" />
+      </head>
+  <body data-spy="scroll">
+    <script language="javascript" type="text/javascript">
+      function SendEmail()
+      {
+        
+        
+        if(fnTrim(document.getElementById('name').value)=='')
+        {
+          alert('Please write your name');
+          return false;
+        }
+        if(checkEmail(fnTrim(document.getElementById('email').value))==false)
+        {
+          alert('Please provide a valid email address');
+          return false;
+        }
+        if(fnTrim(document.getElementById('message').value)=='')
+        {
+          alert('Please write a message');
+          return false;
+        }
+        alert("Thank you for contacting us. We will get in touch with you soon.");
+        document.getElementById('contactForm').method="post";
+        document.getElementById('contactForm').action="http://jenkins.novusinfo.com/send_email.php";
+        document.getElementById('contactForm').submit();
+        
+        return false;
+      }
+      
+      function checkEmail(email) {
+        var filter = "/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;";
+        
+        //if (!filter.test(email)) {
+          
+          //return false;
+        //}
+        return true;
+      }
+        
+        function fnTrim(value)
+      {
+        
+        value=value.replace(/^\s+ \s+$/g, "");
+        return value;
+      }
+    </script>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">
+              Toggle navigation
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="company logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right custom-menu">
+            <li >
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+            <li >
+              <a href="index.html#about">
+                About Us
+              </a>
+            </li>
+            <li >
+              <a href="index.html#training">
+                Training
+              </a>
+            </li>
+            <li >
+              <a href="index.html#staffing">
+                Staffing
+              </a>
+            </li>
+            <li >
+              <a href="index.html#products">
+                Products
+              </a>
+            </li>
+            <li class="active" >
+              <a  href="index.html#solutions">
+                Solutions
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <div class="container blog singlepost">
+      <div class="row" >
+        <article>
+          
+          <img src="images/solution_banner.jpg" class="img-responsive" alt="photo" />
+          
+        </article>
+        
+      </div>
+      <div id="sol_cloud">
+        &nbsp;
+      </div>
+      <h1 class="page-header sidebar-title" >
+        <b>Solutions</b>
+      </h1>
+      <div  class="row" style="background-color:#e6e6e6;padding-left:10px;" >
+        
+        <div >
+          
+          <b>
+            <span style="font-family: @Batang, @BatangChe, @DFKai-SB; font-weight: normal;
+font-style: normal; text-decoration: none; font-size: 14pt;">
+  <b>Cloud Computing</b>
+              </span>
+              
+            </b>
+          </div>
+          <div>
+            <p>
+              Cloud is becoming an integral part of any IT strategy. We at Novus InfoSolutions make sure that 
+              the cloud solutions you choose reflect the need of your business.
+            </p>
+            <p>
+              We provide the following cloud services 
+            </p>
+            <ul class="con_list">
+              <li>
+                <b>
+                  IT Optimization
+                </b>
+                <p>
+                  We evaluate your existing IT infrastructure and help you reduce your IT cost, making highly 
+                  available, increase scalability and improve IT support. 
+                </p>
+                
+              </li>
+              <li>
+                <b>
+                  Architecture Analysis
+                </b>
+                <p>
+                  Our Cloud experts create architectures and procedures. 
+                </p>
+                
+              </li>
+              <li>
+                <b>
+                  Cloud Implementation
+                </b>
+                <p>
+                  We will take your architecture analysis designs and transform into a production capable 
+                  infrastructure. 
+                </p>
+                
+              </li>
+              <li>
+                <b>
+                  Cloud Migration 
+                </b>
+                <p>
+                  We follow a proven methodology for migration to cloud. Migrating to the cloud is achieved 
+                  through detailed planning and expert technical execution.
+                </p>
+              </li>
+             
+            </ul>
+             <div id="sol_devops">
+              &nbsp;
+            </div>
+             <p>
+               &nbsp;
+             </p>
+          </div>
+          
+        </div>
+        
+        <hr />
+        
+          <div  class="row" style="background-color:#A7CCE8;padding-left:10px;"  >
+          
+             <div >
+               <b>
+                 <span style="font-family: @Batang, @BatangChe, @DFKai-SB; font-weight: normal;
+font-style: normal; text-decoration: none; font-size: 14pt;">
+  <b>Dev Ops</b>
+              </span>
+              
+            </b>
+             </div>
+             
+             <div>
+               <p>
+                We use industry standard process and procedures for DevOps and with cutting edge 
+                  technologies, tools and software. 
+               </p>
+               
+               <div id="sol_bigdata">
+        &nbsp;
+      </div>
+             </div>
+             
+             <p>
+               &nbsp;
+             </p>
+        </div>
+        <hr />
+        
+        <div  class="row" style="background-color:#e6e6e6;padding-left:10px;"  >
+          
+             <div >
+               <b>
+                 <span style="font-family: @Batang, @BatangChe, @DFKai-SB; font-weight: normal;
+font-style: normal; text-decoration: none; font-size: 14pt;">
+  <b>Big Data</b>
+              </span>
+              
+            </b>
+             </div>
+             
+             <div>
+               <p>
+                 Big data allows companies to capture and stream massive amounts of information and real world 
+                 visualizations – all in one place.
+                 
+               </p>
+               <p>
+                 Novus architects know current Big Data and NoSQL systems, their comparative advantages, how 
+                 to successfully install them into your IT environment.
+               </p>
+                <div id="sol_custapp">
+        &nbsp;
+      </div>
+             </div>
+             
+             <p>
+               &nbsp;
+             </p>
+        </div>
+        <hr />
+        <div  class="row" style="background-color:#A7CCE8;padding-left:10px;" >
+          
+        <div >
+          
+          <b>
+            <span style="font-family: @Batang, @BatangChe, @DFKai-SB; font-weight: normal;
+font-style: normal; text-decoration: none; font-size: 14pt;">
+  <b>Custom Projects</b>
+              </span>
+              
+            </b>
+        </div>
+        <div>
+          <p>
+            Custom application development work can be a daunting task for many companies. Wheater you 
+            need a complete project team or highly experienced professionals to guide your staff Novus 
+            InfoSolutions has the expertise to help.
+          </p>
+          <p>
+            Our resources are experts in their fields bringing great technical abilities to achieve immediate 
+            results with low cost.
+          </p>
+          <p>
+            We adopt the "keep it simple" policy with all projects and will breakdown your vision and 
+            strategy requirements. 
+          </p>
+          <p>
+            The following detailed steps are our approach to ensuring a successful project.​
+          </p>
+          <ul class="con_list">
+            <li>
+              Produce and agree the Statement of Work (SOW).​
+              </li>
+              <li>
+                Produce a high level Project Initiation Document (PID).​​
+              </li>
+              <li>
+                Conception & non-functional Proof of Concept.​​
+              </li>
+              <li>
+                Review existing documented requirements.​​
+              </li>
+              <li>
+                Review existing applications.​​
+              </li>
+              <li>
+                Carry out detailed business analysis workshops.​​
+              </li>
+              <li>
+                Capture, document and agree user and business requirements.​​
+              </li>
+              <li>
+                Design Stage.​​
+              </li>
+              <li>
+                Develop High Level Functional Specifications.​​
+              </li>
+              <li>
+                Provide Detailed Effort & Costs to Customer.​​
+              </li>
+              <li>
+                Develop Detailed Functional Specifications.​​
+              </li>
+              <li>
+                Develop Technical Specifications (using Standard SFDC Configuration and custom code using 
+                Apex & VisualForce).​​
+              </li>
+              <li>
+                Build + System Integrations, Data Migrations (Extract, Transform and Load).​​
+              </li>
+              <li>
+                Test & Rebuild.​​
+              </li>
+              <li>
+                Quality Assurance.​​
+              </li>
+              <li>
+                User Acceptance Testing 1.​​
+              </li>
+              <li>
+                Re-work & Re-test.​​
+              </li>
+              <li>
+                User Acceptance Testing 2.​​
+              </li>
+              <li>
+                Re-work & Re-test.​​
+              </li>
+              <li>
+                User Acceptance Testing 3.​​
+              </li>
+              <li>
+                Training.​​
+              </li>
+              <li>
+                Handover, Go Live.​​
+              </li>
+              <li>
+                Post Implementation Support. ​
+              </li>
+            </ul>
+            <p>
+              The above list of activities will be carried out using Rapid software development(Agile scrum 
+              and Agile Kanban) methodologies.
+            </p>
+        </div>
+        <p>
+          <b>
+            <b>Training</b>
+          </b>
+        </p>
+        <p>
+          Are you getting the most of your training? Are you a little frustrated for confused? 
+          We are ready to help.
+        </p>
+        </div>
+        
+        <hr />
+        
+        
+    </div>
+    
+    
+    
+    <section id="contact">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-lg-12">
+              <div class="text-center color-elements">
+                <h2>
+                  Contact Us
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-8">
+               <form id="contactForm" action="http://jenkins.novusinfo.com/send_email.php" target="my-iframe" method="post">
+             <div class="row">
+                  <div class="col-sm-6 height-contact-element">
+                    <div class="form-group">
+                      <input type="text" name="first_name" class="form-control custom-labels" id="name" placeholder="FULL NAME" required data-validation-required-message="Please write your name!"/>
+                      <p class="help-block text-danger">
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 height-contact-element">
+                    <div class="form-group">
+                      <input type="email" name="email" class="form-control custom-labels" id="email" placeholder="EMAIL" required data-validation-required-message="Please write your email!"/>
+                      <p class="help-block text-danger">
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 height-contact-element">
+                    <div class="form-group">
+                      <input type="text" name="message" class="form-control custom-labels" id="message" placeholder="HOW MAY WE HELP YOU" required data-validation-required-message="Please write a message!"/>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-6 height-contact-element">
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-md btn-custom btn-noborder-radius" onclick="javascript:return SendEmail();" value="Send Email"/>
+                
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-3 col-xs-6 height-contact-element">
+                    <div class="form-group">
+                      <div id="response_holder">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 contact-msg">
+                    <div id="success">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-5 col-md-3 col-lg-offset-1 col-md-offset-1">
+              <div class="row">
+                <div class="col-md-12 height-contact-element">
+                  <div class="form-group">
+                    <i class="fa fa-2x fa-map-marker">
+                    </i>
+                    <span class="text">
+                      3713 Siena Ln ,Palm Harbor, FL 34685 
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-12 height-contact-element">
+                  <div class="form-group">
+                    <i class="fa fa-2x fa-phone">
+                    </i>
+                    <span class="text">
+                      (+1) 727-537-9559 
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-12 height-contact-element">
+                  
+                  <div class="form-group">
+                    <i class="fa fa-2x fa-envelope">
+                    </i>
+                    <span class="text">
+                      info@novusinfo.com
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="follow-us">
+      <div class="container">
+        
+        <div class="text-center height-contact-element">
+          <h2>
+            FOLLOW US
+          </h2>
+        </div>
+        <img class="img-responsive displayed" src="images/short.png" alt="short" />
+        <div class="text-center height-contact-element">
+          <ul class="list-unstyled list-inline list-social-icons">
+            <li class="active">
+              <a href="#">
+                <img src="images/facebook.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/linkedin.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/twitter-icon.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/googleplus-icon.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/youtube-icon.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="row myfooter">
+          <div class="col-sm-6">
+            <div class="pull-left">
+              © Copyright Novus InfoSolutions 2015 
+              
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="pull-right">
+              Designed by 
+              <a href="www.novusinfo.com/">
+                Novus InfoSolutions
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script language="javascript" type="text/javascript" src="js/jquery.js">
+    </script>
+    <!-- Bootstrap Core JavaScript -->
+    <script language="javascript" type="text/javascript" src="js/bootstrap.min.js">
+    </script>
+    <!-- Portfolio -->
+    <script language="javascript" type="text/javascript"  src="js/jquery.quicksand.js">
+    </script>
+    
+    <!--Jquery Smooth Scrolling-->
+    
+    <script language="javascript" type="text/javascript" >
+      $(document).ready(function(){
+        $('.custom-menu a[href^="#"], .intro-scroller .inner-link').on('click',function (e) {
+          e.preventDefault();
+          
+          var target = this.hash;
+          var $target = $(target);
+          
+          $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+          }
+                                         , 900, 'swing', function () {
+                                           window.location.hash = target;
+                                         }
+                                        );
+        }
+                                                                      );
+        
+        $('a.page-scroll').bind('click', function(event) {
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+          }
+                                         , 1500, 'easeInOutExpo');
+          event.preventDefault();
+        }
+                               );
+        
+        $(".nav a").on("click", function(){
+          $(".nav").find(".active").removeClass("active");
+          $(this).parent().addClass("active");
+        }
+                      );
+        
+        $('body').append('<div id="toTop" class="btn btn-primary color1"><span class="glyphicon glyphicon-chevron-up"></span></div>');
+        $(window).scroll(function () {
+          if ($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+          }
+          else {
+            $('#toTop').fadeOut();
+          }
+        }
+                        );
+        
+        $('#toTop').click(function(){
+          $("html, body").animate({
+            scrollTop: 0 }
+                                  , 700);
+          return false;
+        }
+                         );
+        
+      }
+                       );
+      
+    </script>
+    
+    <script language="javascript" type="text/javascript" >
+      function gallery(){
+      }
+      ;
+      
+      var $itemsHolder = $('ul.port2');
+      var $itemsClone = $itemsHolder.clone();
+      
+      var $filterClass = "";
+      $('ul.filter li').click(function(e) {
+        e.preventDefault();
+        $filterClass = $(this).attr('data-value');
+        if($filterClass == 'all'){
+          var $filters = $itemsClone.find('li');
+        }
+        else {
+          var $filters = $itemsClone.find('li[data-type='+ $filterClass +']');
+        }
+        $itemsHolder.quicksand(
+          $filters,
+          {
+            duration: 1000 }
+          ,
+          gallery
+        );
+      }
+                             );
+      
+      $(document).ready(gallery);
+    </script>
+    
+    <iframe width="0" height="0" name="my-iframe" src="http://jenkins.novusinfo.com/send_email.php"></iframe>
+  </body>
+</html>
