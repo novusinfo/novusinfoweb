@@ -347,3 +347,40 @@ ul.nav-pills  { text-align: center; margin: 25px auto 20px auto; width: auto; di
 .contact-msg { line-height:1.6em; margin-bottom:20px;}
 ul.con_list {list-style-type: circle;}
 ul.con_list_sub {list-style-type: square;}
+
+
+.DataGridHeader
+{ 
+ font-family: "Open Sans",Arial,Helvetica,sans-serif;
+ font-size: 13px;
+ background-color:#00ABE0;
+ -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 3px;font-size:12px;
+    padding: 10px 10px 10px 10px;
+
+ color :White ;
+ 
+ 
+ }
+ #companytheme1
+ {
+  border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border : 2px solid #00ABE0;
+   width: 350px;
+    height: 290px; 
+   color:White;
+    background-color:#00ABE0;
+}
+
+#companytheme2
+ {
+   border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 550px;
+    height: 350px; 
+    
+}
