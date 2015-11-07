@@ -369,8 +369,7 @@ ul.con_list_sub {list-style-type: square;}
   -moz-border-radius: 5px; 
   -webkit-border-radius: 5px; 
   border : 2px solid #00ABE0;
-   width: 350px;
-    height: 290px; 
+   
    color:White;
     background-color:#00ABE0;
 }
@@ -380,7 +379,6 @@ ul.con_list_sub {list-style-type: square;}
    border-radius: 25px;
     border: 2px solid #73AD21;
     padding: 20px; 
-    width: 550px;
-    height: 350px; 
+    
     
 }
