@@ -369,9 +369,9 @@ ul.con_list_sub {list-style-type: square;}
   -moz-border-radius: 5px; 
   -webkit-border-radius: 5px; 
   border : 2px solid #00ABE0;
-   
+    padding-left:0px;
    color:White;
-    background-color:#00ABE0;
+    background-color:#0075b6;
 }
 
 #companytheme2
